@@ -57,6 +57,7 @@ public class CircleClickScript : MonoBehaviour
 
     void callIronSourceEvent()
     {
+        Amplitude.Instance.logEvent(string.Format("CLICKED_{0}_TIMES", numberClicks));
         ISInterstitialScript.LoadInterstitial();
     }
 }

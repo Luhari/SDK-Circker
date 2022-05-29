@@ -18,6 +18,7 @@ public class CrashlyticsTester : MonoBehaviour
 
     public void ThrowException()
     {
+        Amplitude.Instance.logEvent("APP_CRASHED");
         UnityEngine.Diagnostics.Utils.ForceCrash(UnityEngine.Diagnostics.ForcedCrashCategory.FatalError);
     }
 }
