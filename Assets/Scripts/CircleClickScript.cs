@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CircleClickScript : MonoBehaviour
@@ -57,7 +58,9 @@ public class CircleClickScript : MonoBehaviour
 
     void callIronSourceEvent()
     {
-        Amplitude.Instance.logEvent(string.Format("CLICKED_{0}_TIMES", numberClicks));
+        Dictionary<string, object> eventProps = new Dictionary<string, object>();
+        eventProps.Add("Number Clicks", numberClicks);
+        Amplitude.Instance.logEvent("CLICKED", eventProps);
         ISInterstitialScript.LoadInterstitial();
     }
 }

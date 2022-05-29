@@ -16,6 +16,7 @@ public class AmplitudeInit : MonoBehaviour
         Debug.Log("Init Amplitude");
         Amplitude amplitude = Amplitude.Instance;
         amplitude.logging = true;
+        amplitude.trackSessionEvents(true);
         amplitude.init(amplitudeKey);
         Amplitude.Instance.logEvent("EVENT_NAME_HERE");
     }
