@@ -1,9 +1,6 @@
 <dependencies>
   <packages>
     <package>com.amplitude:android-sdk:2.34.1</package>
-    <package>com.android.support:cardview-v7:26.0.2</package>
-    <package>com.android.support:design:26.0.2</package>
-    <package>com.android.support:recyclerview-v7:26.0.2</package>
     <package>com.google.android.gms:play-services-ads:20.6.0</package>
     <package>com.google.android.gms:play-services-ads-identifier:18.0.1</package>
     <package>com.google.android.gms:play-services-appset:16.0.2</package>
@@ -24,7 +21,6 @@
   <files>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/9.0.0/firebase-analytics-unity-9.0.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/9.0.0/firebase-analytics-unity-9.0.0.pom</file>
-    <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/9.0.0/firebase-app-unity-9.0.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/9.0.0/firebase-app-unity-9.0.0.pom</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/9.0.0/firebase-crashlytics-unity-9.0.0.aar</file>
     <file>Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/9.0.0/firebase-crashlytics-unity-9.0.0.pom</file>

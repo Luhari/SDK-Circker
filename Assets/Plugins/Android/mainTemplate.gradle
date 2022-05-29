@@ -34,9 +34,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
     implementation 'com.amplitude:android-sdk:2.34.1' // Packages/com.amplitude.unityplugin/Editor/AmplitudeDependencies.xml:11
-    implementation 'com.android.support:cardview-v7:26.0.2' // Assets/Helpshift/Editor/HelpshiftDependencies.xml:9
-    implementation 'com.android.support:design:26.0.2' // Assets/Helpshift/Editor/HelpshiftDependencies.xml:7
-    implementation 'com.android.support:recyclerview-v7:26.0.2' // Assets/Helpshift/Editor/HelpshiftDependencies.xml:11
     implementation 'com.google.android.gms:play-services-ads:20.6.0' // Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml:8
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:16
     implementation 'com.google.android.gms:play-services-appset:16.0.2' // Assets/IronSource/Editor/IronSourceSDKDependencies.xml:24
