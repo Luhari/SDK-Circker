@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "809849535986",
+    "project_id": "unity-sdk-playground",
+    "storage_bucket": "unity-sdk-playground.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809849535986:android:cf20b1403ced9e19f3bf6b",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.SDKCircker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809849535986-3k263qhm0qhcqs372ht9gg0jale5sieh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAslnB4OUM6UiqV17HDi-6gsVJZBv1Dxpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809849535986-3k263qhm0qhcqs372ht9gg0jale5sieh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

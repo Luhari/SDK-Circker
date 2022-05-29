@@ -3,9 +3,12 @@ using UnityEngine;
 
 public class CircleClickScript : MonoBehaviour
 {
+
     private Vector3 originalScale;
     private float duration = 0.1f;
     private int numberClicks = 0;
+    private IronSourceBannerScript ISBannerScript;
+    private IronSourceInterstitialScript ISInterstitialScript;
 
     private TMPro.TMP_Text numberClicksText;
     // Start is called before the first frame update
@@ -14,6 +17,9 @@ public class CircleClickScript : MonoBehaviour
         originalScale = gameObject.transform.localScale;
 
         numberClicksText = gameObject.GetComponentInChildren<TMPro.TMP_Text>();
+
+        ISBannerScript = gameObject.GetComponentInChildren<IronSourceBannerScript>();
+        ISInterstitialScript = gameObject.GetComponentInChildren<IronSourceInterstitialScript>();
     }
 
     // Update is called once per frame
@@ -48,12 +54,12 @@ public class CircleClickScript : MonoBehaviour
 
         switch (numberClicks)
         {
-            case 10: callFirebaseEvent(); break;
+            case 10: callIronSourceEvent(); break;
         }
     }
 
-    void callFirebaseEvent()
+    void callIronSourceEvent()
     {
-
+        ISInterstitialScript.LoadInterstitial();
     }
 }
