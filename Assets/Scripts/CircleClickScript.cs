@@ -52,10 +52,7 @@ public class CircleClickScript : MonoBehaviour
         }
         numberClicksText.text = (++numberClicks).ToString();
 
-        switch (numberClicks)
-        {
-            case 10: callIronSourceEvent(); break;
-        }
+        if(numberClicks%10 == 0) callIronSourceEvent();
     }
 
     void callIronSourceEvent()
