@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PlayFab;
+using PlayFab.ClientModels;
 
 public class CircleClickScript : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class CircleClickScript : MonoBehaviour
     private int numberClicks = 0;
     private IronSourceBannerScript ISBannerScript;
     private IronSourceInterstitialScript ISInterstitialScript;
+
+    [SerializeField]
+    private PlayFabLeaderBoard PBLeaderboard;
 
     private TMPro.TMP_Text numberClicksText;
     // Start is called before the first frame update
@@ -52,8 +57,10 @@ public class CircleClickScript : MonoBehaviour
             counter += Time.deltaTime;
         }
         numberClicksText.text = (++numberClicks).ToString();
+        UpdatePlayFabLeaderboard();
 
         if(numberClicks%10 == 0) callIronSourceEvent();
+
     }
 
     void callIronSourceEvent()
@@ -62,5 +69,10 @@ public class CircleClickScript : MonoBehaviour
         eventProps.Add("Number Clicks", numberClicks);
         Amplitude.Instance.logEvent("CLICKED", eventProps);
         ISInterstitialScript.LoadInterstitial();
+    }
+
+    void UpdatePlayFabLeaderboard()
+    {
+        PBLeaderboard.UpdateClicksLeaderboard(numberClicks);
     }
 }
